@@ -1,0 +1,174 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-header button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #fff2);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+
+.button-header button:hover {
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff,
+        0 0 80px #fff,
+        0 0 160px #fff,
+        0 0 320px #fff;
+}
+
+.button-header button span {
+    position: relative;
+    z-index: 100;
+}
+
+/* .button-header button:only-child {
+    filter: hue-rotate(90deg);
+} */
+
+.button-header button::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    box-shadow: 5px -8px 0 #fff, 5px 8px 0 #fff;
+    transition: width 0.5s, left 0.5s, height .5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.button-header button:hover::before {
+    width: 60%;
+    height: 110%;
+    left: -2px;
+    box-shadow: 5px 0 0 #fff, 5px 0 0 #fff;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.button-header button::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    box-shadow: -5px -8px 0 #fff, -5px 8px 0 0 #fff;
+    transition: width 0.5s, left 0.5s, height .5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.button-header button:hover::after {
+    width: 60%;
+    height: 110%;
+    right: -2px;
+    box-shadow: -5px 0 0 #fff, -5px 0 0 #fff;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .button-header button {
+        position: relative;
+        display: inline-block;
+        padding: 2px 5px;
+        border: 2px solid #fff;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: small;
+        text-decoration: none;
+        color: #fff;
+        -webkit-box-reflect: below 0px linear-gradient(transparent, #fff2);
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    .button-header button:checked {
+        transition-delay: 1.5s;
+        color: #000;
+        box-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #fff,
+            0 0 80px #fff,
+            0 0 160px #fff,
+            0 0 320px #fff;
+    }
+
+    .button-header button span {
+        position: relative;
+        z-index: 100;
+    }
+
+
+
+    .button-header button::before {
+        content: "";
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 2px;
+        background: #fff;
+        box-shadow: 5px -6px 0 #fff, 5px 6px 0 #fff;
+        transition: width 0.5s, left 0.5s, height .5s,
+            box-shadow 0.5s;
+        transition-delay: 1s, 0.5s, 0s, 0s;
+    }
+
+    .button-header button:checked::before {
+        width: 60%;
+        height: 100%;
+        left: -2px;
+        box-shadow: 5px 0 0 #fff, 5px 0 0 #fff;
+        transition-delay: 0s, 0.5s, 1s, 1s;
+    }
+
+    .button-header button::after {
+        content: "";
+        position: absolute;
+        right: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 2px;
+        background: #fff;
+        box-shadow: -5px -6px 0 #fff, -5px 6px 0 #fff;
+        transition: width 0.5s, left 0.5s, height .5s,
+            box-shadow 0.5s;
+        transition-delay: 1s, 0.5s, 0s, 0s;
+    }
+
+    .button-header button:checked ::after {
+        width: 60%;
+        height: 100%;
+        right: -2px;
+        box-shadow: -5px 0 0 #fff, -5px 0 0 #fff;
+        transition-delay: 0s, 0.5s, 1s, 1s;
+    }
+}
