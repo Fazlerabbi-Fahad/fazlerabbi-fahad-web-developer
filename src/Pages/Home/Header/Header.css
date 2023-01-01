@@ -63,7 +63,7 @@ header {
 
 @media screen and (max-width:1024px) {
     header {
-        height: 150vh;
+        height: 100vh;
     }
 
 }
@@ -77,4 +77,6 @@ header {
     .scroll-down {
         display: none;
     }
+
+
 }
