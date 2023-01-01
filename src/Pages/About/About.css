@@ -111,4 +111,15 @@
         ;
     }
 
+    .about-me {
+        width: 250px;
+        height: 400px;
+    }
+
+    .about-me-image img {
+
+        width: 250px;
+        height: 400px;
+    }
+
 }
