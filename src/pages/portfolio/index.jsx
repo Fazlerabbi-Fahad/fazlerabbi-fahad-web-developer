@@ -43,14 +43,14 @@ export default function Portfolio({ projects }) {
                 <h6 className="font-medium text-sm sm:text-xl text-white">
                   {project.title}
                 </h6>
-                <p className="text-white text-sm sm:text-base text-normal text-justify my-3">
+                <div className="text-white text-sm sm:text-base text-normal text-justify my-3">
                   <small>{project.duration}</small>
                   <ul>
                     <li>{project.line1}</li>
                     <li>{project.line2}</li>
                     <li>{project.line3}</li>
                   </ul>
-                </p>
+                </div>
                 <div>
                   <GradientButton>
                     <div className="flex justify-center">
