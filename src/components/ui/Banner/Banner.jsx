@@ -126,7 +126,7 @@ export default function Banner() {
                   </span>
                 </h1>
                 <div className="m-2">
-                  <Link href="/portfolio" className="hover:animate-pulse">
+                  <Link href="portfolio" className="hover:animate-pulse">
                     <div className={`${styles.buttonHeader}`}>
                       <button>Previous Projects</button>
                     </div>
